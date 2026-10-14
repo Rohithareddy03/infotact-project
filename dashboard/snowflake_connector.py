@@ -5,10 +5,10 @@ import snowflake.connector
 
 def load_analytics_data():
     conn = snowflake.connector.connect(
-        account=st.secrets["snowflake"]["GZGDCQH-UU35933"],
-        user=st.secrets["snowflake"]["ROHITHAREDDY"],
-        password=st.secrets["snowflake"]["Rabbitreddy@2005"],
-        warehouse=st.secrets["snowflake"]["COMPUTE_WH"],
+        account=st.secrets["snowflake"]["ACCOUNT"],
+        user=st.secrets["snowflake"]["USER"],
+        password=st.secrets["snowflake"]["PASSWORD"],
+        warehouse=st.secrets["snowflake"]["WAREHOUSE"],
         database="ATMOSYNC",
         schema="RAW",
     )
