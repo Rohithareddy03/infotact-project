@@ -1,0 +1,38 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+**/profiles.yml
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# dbt generated files
+**/target/
+**/dbt_packages/
+**/logs/
+
+# Log files
+*.log
+
+# Kafka installation binaries
+kafka_2.13-4.3.1/
+
+# Git installation accidentally bundled in dbt folder
+atmosync_dbt/bin/
+atmosync_dbt/cmd/
+atmosync_dbt/cmd copy/
+atmosync_dbt/dev/
+atmosync_dbt/etc/
+atmosync_dbt/tmp/
+atmosync_dbt/ucrt64/
+atmosync_dbt/usr/
+atmosync_dbt/git-bash.exe
+atmosync_dbt/git-cmd.exe
+atmosync_dbt/unins001.*
+atmosync_dbt/ReleaseNotes.html
+atmosync_dbt/LICENSE.txt
